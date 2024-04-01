@@ -1,0 +1,40 @@
+---
+title: "The Auschwitz Death Certificates Unveil the Depths of Nazi Atrocities"
+author: 
+  - Yichen ji
+format: pdf
+thanks: "Code and data are available at: https://github.com/Selinayichenji/Canadian_election_prediction.git."
+---
+
+The Auschwitz Concentration Camp, located in Nazi-occupied Poland, has become synonymous with the atrocities of the Holocaust. As one of the most infamous extermination camps during World War II, Auschwitz witnessed the tragic deaths of over a million innocent men, women, and children, the vast majority of whom were Jews. This site serves not just as a reminder of the extreme atrocities against humanity but also as a perpetual marker of historical memory, reminding us of a past that must not be forgotten. In today's rapidly advancing technological era, how to responsibly and respectfully handle and present such historical data becomes a significant issue. Utilizing modern technological means requires not only accurately conveying historical information but also maintaining respect and sensitivity towards the victims and the factual history.
+
+
+Digital tools like Shiny apps significantly support this goal by improving the accessibility and interactivity of data. They allow users from anywhere in the world to directly access historical materials, exploring these data in a more interactive and engaging way. For example, Auschwitz death certificates processed through a Shiny app not only enable detailed examination of each record but also allow for in-depth understanding through search and filter functions, delving into the background stories of each victim. This digital presentation method not only increases the educational value of historical data but also offers a new dimension in commemorating past tragedies.
+
+During the process of creating a Shiny app with the Auschwitz death certificate data from 1942 to 1943, I configured the app to display a bar chart with the x-axis representing months and the y-axis representing the number of deaths. This setup allows users to select the deceased's residence, birthplace, religion, and an age at death that I calculated spontaneously. Below are the observations I made from the Shiny app.
+
+Upon a detailed analysis of the Auschwitz Concentration Camp's death certificate data, we unearth complex and layered mortality patterns across different age groups and religious affiliations, painting a nuanced picture of suffering and the struggle for survival during this historical period. For the age group of 0 to 18 years, the data revealed three significant peaks in mortality: the first in September 1942 with approximately 650 deaths, the second and global peak in May 1943 with around 675 deaths. These normal distribution graphs resemble waves, gradually rising then sharply falling. A third peak followed in December 1943, the last recorded month, with around 500 deaths. Within the Jewish (Jews) population, a peak of 525 deaths was noted in September 1942. Catholics (Catholic), on the other hand, reached a peak of about 550 deaths in April and May 1943, followed by another peak of 375 deaths from October to December 1943. Greek Orthodox followers had a smaller peak of 65 deaths in December 1943.
+This indicates that the first wave of deaths predominantly involved Jewish individuals, while the latter two waves primarily consisted of Catholics, with a portion of Greek Orthodox followers in the last month.
+
+Further analysis shows that the distribution of all young adults aged 18 to 30 years mirrors the mortality distribution of Jews. A peak was reached in September 1942, with a sharp decline in November and December, followed by a smaller peak in February of the following year.
+
+The total data reached a peak of 2250 deaths in September 1942, with Jews experiencing over 1500 deaths in August and September, and Catholics seeing over 700 deaths in September.
+Subsequently, the overall data plummeted to around 250 deaths in November and December. However, a peak of 1750 deaths emerged again in February 1943. Within this peak, the number of Jewish deaths was slightly under 1000, while Catholics accounted for about 670 deaths.
+When examining the data for Catholics alone in this age group, it aligns with the previously mentioned distribution of five peaks. However, the highest number of deaths, 800 in March 1943, was relatively low compared to the number of Jewish deaths, thus having a minor impact on the overall distribution.
+
+For the age group of 31 to 40 years, we observed that the number of deaths in August 1942 was slightly below 2500, but there was a dramatic decrease in November and December, with deaths rising again to over 1500 by February 1943.
+
+For the age groups of 41 to 50 and 51 to 60 years, the peaks of deaths reached approximately 1700 in August 1942 and an anomalous peak of over 1000, respectively, followed by a sharp decline to below 250 and around 100 deaths in November and December.
+
+In the elderly age group of over 60, peaks of 160 to 170 deaths occurred in August and October 1942 and February 1943.
+
+The mortality distribution of Catholics aged 31 to 50 mirrors the overall pattern (five peaks) and, in the groups over 50, the total number of deaths gradually increased over time. Regardless of the age group, the mortality distribution of Jews mirrors the overall mortality distribution.
+
+The inspiration to develop a Shiny App to process Auschwitz death certificate data stemmed from a compelling need to bridge the gap between historical archives and the modern digital world. This project was envisioned as more than a mere digital transformation of records; it aimed to create an interactive platform that allows users to delve into the data and unearth the stories of individuals who endured unthinkable atrocities. By meticulously compiling and presenting each victim's information—ranging from birth dates to places of residence and religious affiliations—we sought to offer a personalized glimpse into the lives that were brutally cut short.
+
+
+The creation of the Shiny App to process Auschwitz death certificate data holds profound implications for future historical education and the preservation of memory. In an era where digital technology shapes much of our understanding of the world, this project underscores the potential of technological innovations to safeguard historical memory. By making these records accessible and interactive, we contribute to a collective memory that transcends generations, ensuring that the lessons of the past remain relevant and impactful.
+
+
+In conclusion, the Shiny App dedicated to processing Auschwitz death certificate data represents a crucial step towards making historical records more accessible and engaging for the public. By providing an interactive platform that not only educates but also fosters empathy, this project contributes significantly to our understanding of the Holocaust and the individual lives it affected.
+
