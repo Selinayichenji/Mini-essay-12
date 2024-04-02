@@ -3,31 +3,11 @@ library(ggplot2)
 library(lubridate)
 library(dplyr)
 library(googlesheets4)
+library(readr)
 
 
-x <- read_sheet('https://docs.google.com/spreadsheets/d/1tGFHHICtguU5_S_QuCBpW0awQIGF-X7gY30j0URRlok/edit#gid=864982580')
+x <- read_csv("death_certificate.csv")
 
-#Cleaning
-x$Date_of_Birth <- as.Date(x$`Date of Birth`, format = "%Y-%m-%d")
-x$Date_of_Death <- as.Date(x$`Date of Death`, format = "%Y-%m-%d")
-
-x <- x[!is.na(x$Date_of_Birth) & !is.na(x$Date_of_Death),]
-
-x$Age_at_Death <- as.integer(format(x$Date_of_Death, "%Y")) - as.integer(format(x$Date_of_Birth, "%Y"))
-
-x <- x %>% filter(Age_at_Death <= 100)
-
-x$Birthplace <- as.character(x$Birthplace)
-x$Residence <- as.character(x$Residence)
-x <- x %>%
-  filter(!grepl("\\.\\.\\.|\\?| '|---", Birthplace))
-x <- x %>%
-  filter(!grepl("\\.\\.\\.|\\?| '|---", Residence))
-
-x <- x %>%
-  mutate(YearMonth = format(Date_of_Death, "%Y-%m"))
-x <- x %>%
-  mutate(YearMonth = as.Date(paste0(YearMonth, "-01")))
 
 #Build graphs
 ui <- fluidPage(
@@ -38,9 +18,9 @@ ui <- fluidPage(
       selectInput("birthplaceInput", "Choose a Birthplace:", 
                   choices = c('All', sort(unique(x$Birthplace)))),
       selectInput("residenceInput", "Choose a Residence:", 
-                  choices = c('All', sort(unique(x$Residence)))), # 添加了sort()函数
+                  choices = c('All', sort(unique(x$Residence)))), 
       selectInput("religionInput", "Choose a Religion:", 
-                  choices = c('All', sort(unique(x$Religion)))), # 添加了sort()函数
+                  choices = c('All', sort(unique(x$Religion)))), 
       sliderInput("ageSlider", "Select Age Range:",
                   min = min(x$Age_at_Death, na.rm = TRUE), 
                   max = max(x$Age_at_Death, na.rm = TRUE), 
@@ -53,7 +33,6 @@ ui <- fluidPage(
   )
 )
 
-# Server逻辑
 server <- function(input, output) {
   
   filtered_data <- reactive({
@@ -87,7 +66,6 @@ server <- function(input, output) {
   output$histPlot <- renderPlot({
     # Ensure that filtered data is not empty
     if (nrow(filtered_data()) > 0) {
-      # Assuming YearMonth is in the format "YYYY-MM"
       ggplot(filtered_data(), aes(x = YearMonth, y = Count)) +
         geom_col() +
         scale_x_date(date_labels = "%Y-%m", date_breaks = "1 month") +
@@ -100,5 +78,4 @@ server <- function(input, output) {
   })
 }
 
-# 运行应用
 shinyApp(ui = ui, server = server)

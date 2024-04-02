@@ -1,0 +1,13 @@
+name: jews
+title: jews
+username: selinaji
+account: selinaji
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11641502
+bundleId: 8444914
+url: https://selinaji.shinyapps.io/jews/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|Auschwitz_Death.pdf|Auschwitz_Death.qmd|download and clean.R|jew

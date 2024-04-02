@@ -3,7 +3,8 @@ title: "The Auschwitz Death Certificates Unveil the Depths of Nazi Atrocities"
 author: 
   - Yichen ji
 format: pdf
-thanks: "Code and data are available at: https://github.com/Selinayichenji/Mini-essay-12.git"
+thanks: "The Published link is :https://selinaji.shinyapps.io/jews/. Code and data are available at: https://github.com/Selinayichenji/Mini-essay-12.git"
+
 ---
 
 The Auschwitz Concentration Camp, located in Nazi-occupied Poland, has become synonymous with the atrocities of the Holocaust. As one of the most infamous extermination camps during World War II, Auschwitz witnessed the tragic deaths of over a million innocent men, women, and children, the vast majority of whom were Jews. This site serves not just as a reminder of the extreme atrocities against humanity but also as a perpetual marker of historical memory, reminding us of a past that must not be forgotten. In today's rapidly advancing technological era, how to responsibly and respectfully handle and present such historical data becomes a significant issue. Utilizing modern technological means requires not only accurately conveying historical information but also maintaining respect and sensitivity towards the victims and the factual history.

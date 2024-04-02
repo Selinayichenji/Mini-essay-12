@@ -1,0 +1,13 @@
+name: Auschwitz_Death
+title: Auschwitz_Death
+username: selinaji
+account: selinaji
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11641256
+bundleId: 8444797
+url: https://selinaji.shinyapps.io/Auschwitz_Death/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|app2/app.R|app2/death_certificate.csv|Auschwitz_Death.qmd|death_certificate.csv|download and clean.R
